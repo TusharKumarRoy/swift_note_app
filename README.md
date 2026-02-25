@@ -26,59 +26,47 @@ This is a cross-platform iOS/macOS note-taking application that leverages Fireba
 - **Language**: Swift
 - **Architecture**: MVVM (Model-View-ViewModel)
 
-## 📹 Demo Video
+## 📹 Demo
 
-<!-- Replace the URL below with your actual video link -->
-[![Watch Demo](https://img.shields.io/badge/▶-Watch%20Demo-red?style=for-the-badge&logo=youtube)](YOUR_VIDEO_URL_HERE)
+### Quick Preview
+![App Demo](2107037_Recording.gif)
 
-> **Note**: Add your video URL by replacing `YOUR_VIDEO_URL_HERE` with the actual link to your demo video (YouTube, Vimeo, etc.)
+### 🎥 Full Video Demo
+[![Watch Full Demo on Google Drive](https://img.shields.io/badge/▶-Watch%20Full%20Demo-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1VfW0Da14rfXLtt_SAOY4ZO4dCOjEN-LK/view?usp=sharing)
+
+Click the button above to watch the complete demo video on Google Drive.
 
 ## 📸 Screenshots
 
 <details>
 <summary>Click to view all screenshots</summary>
 
-### Authentication Screen
+### 1
 ![Screenshot 1](Screenshots/Screenshot%202026-02-24%20135933.png)
 
-### Sign In View
+### 2
 ![Screenshot 2](Screenshots/Screenshot%202026-02-24%20135953.png)
 
-### Notes List View
+### 3
 ![Screenshot 3](Screenshots/Screenshot%202026-02-24%20140050.png)
 
-### Add New Note
+### 4
 ![Screenshot 4](Screenshots/Screenshot%202026-02-24%20140059.png)
 
-### Note Management
+### 5
 ![Screenshot 5](Screenshots/Screenshot%202026-02-24%20140108.png)
 
-### Notes Overview
+### 6
 ![Screenshot 6](Screenshots/Screenshot%202026-02-24%20140115.png)
 
-### Delete Functionality
+### 7
 ![Screenshot 7](Screenshots/Screenshot%202026-02-24%20140123.png)
 
-### User Interface
+### 8
 ![Screenshot 8](Screenshots/Screenshot%202026-02-24%20140130.png)
 
 </details>
 
-## 🏗️ Project Structure
-
-```
-lab4/
-├── lab4/
-│   ├── lab4App.swift           # Main app entry point
-│   ├── AuthView.swift           # Authentication UI
-│   ├── AuthViewModel.swift      # Authentication logic
-│   ├── FContentView.swift       # Main notes view
-│   ├── AddNoteView.swift        # Add/Edit note view
-│   ├── FirestoreManager.swift   # Firestore operations
-│   ├── Note.swift               # Note model
-│   └── GoogleService-Info.plist # Firebase configuration
-└── Screenshots/                 # App screenshots
-```
 
 ## 🔑 Key Components
 
@@ -98,16 +86,16 @@ lab4/
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Xcode 14.0 or later
-- iOS 16.0+ / macOS 13.0+
+- Xcode
+- macOS 13.0+
 - Firebase account
 
 ### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repository-url>
-   cd 2107037/lab4
+   git clone https://github.com/TusharKumarRoy/swift_note_app/
+
    ```
 
 2. **Configure Firebase**
@@ -118,7 +106,6 @@ lab4/
 
 3. **Install Dependencies**
    - Open `2107037.xcodeproj` in Xcode
-   - Dependencies will be resolved automatically via Swift Package Manager
 
 4. **Run the App**
    - Select your target device/simulator
@@ -131,21 +118,6 @@ lab4/
 - **No Cross-User Access**: Users can only access their own notes
 - **Real-time Security Rules**: Firestore security rules ensure data privacy
 
-## 👨‍💻 Development
-
-### Firebase Firestore Structure
-```
-users/
-  └── {userId}/
-      └── notes/
-          ├── {noteId1}
-          │   ├── title: String
-          │   └── content: String
-          ├── {noteId2}
-          │   ├── title: String
-          │   └── content: String
-          └── ...
-```
 
 ## 📝 License
 
